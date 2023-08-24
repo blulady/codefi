@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .column {
+            float: left;
+        }
+
+        .sidebar{
+            width: 25%;
+        }
+
+        .main-content{
+            width: 50%;
+        }
+
+        .container{
+            text-align: center;
+            display: flex;
+        }
+
+        .container-cards{
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            max-width: calc(50% - 20px);
+            margin-bottom: 12px;
+            border: 1px solid whitesmoke;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8 px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .container-cards img{
+            width: 100%;
+            
+        }
+        .card-image {
+            position: relative;
+        }
+
+        .card-title{
+            position: absolute;
+            top: 0;
+            left: 10px;
+            color: white;
+            z-index: 10;
+        }
+
+        .overlay{
+            background: black;
+            opacity: 50%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        @media screen and (max-width:1200px) {
+            
+        }
+
+        @media screen and (max-width: 768px) {
+        .column, 
+        .sidebar, 
+        .main-content{
+            float:none;
+            width: 100%;
+        }    
+        .sidebar{
+            display: none;
+        }
+        } 
+            
+    
+        @media screen and (max-width: 480px) {
+            .card{
+                max-width: 100%;
+            }
+        }
+
+    </style>
+  </head>
+
+    <body>
+        <div class="container">
+            <div class="column sidebar">
+                <h2>Sidebar 1</h2>
+                <p>here we demonstrate how to link elements together
+                using a div. We can then target the div with a width of 25%.
+                </p>
+            </div>
+            <div class="column main-content">
+                <h2>Main Content</h2>
+                <p>content for main content</p>
+            </div>
+            <div class="column sidebar">
+                <h2>Sidebar 2</h2>
+                <p>This is the content for the second sidebar</p>
+            </div>
+        </div>
+        <div class="container-cards">
+            <div class="card">
+                <div class="card-image">
+                    <img
+                    src="https://cdn.stocksnap.io/img-thumbs/960w/nature-landscape_NU5WUOVI2N.jpg"
+                    alt=""/>
+                    <h2 class="card-title">Card 1</h2>
+                    <div class="overlay"></div>
+                    <p>This is the card content</p>
+                </div>
+                </div>
+            <div class="card">
+                <div class="card-image">
+                    <img
+                src="https://cdn.stocksnap.io/img-thumbs/960w/sea-ocean_9LZWHY05VT.jpg"
+                alt=""/>
+                <h2 class="card-title">Card 2</h2>
+                <div class="overlay"></div>
+                <p>This is the card content</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img
+                    src="https://cdn.stocksnap.io/img-thumbs/960w/nature-landscape_NU5WUOVI2N.jpg"
+                    alt=""/>
+                    <h2 class="card-title">Card 3</h2>
+                    <div class="overlay"></div>
+                    <p>This is the card content</p>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</div>
+</html>
