@@ -1,0 +1,39 @@
+
+
+.card{
+    max-width: calc(50% - 20px);
+    margin-bottom: 12px;
+    border: 1px solid rgb(170, 132, 132);
+    box-sizing: border-box;
+    box-shadow: 0 4px 8 px rgba(207, 166, 166, 0.1);
+    padding: 20px;
+    
+    position:relative;
+    top: 50px;
+}
+
+.container-cards {
+    width: 100%;
+    position: absolute;
+    margin: 50px;
+}
+
+.container-image {
+    width: 100%;
+ 
+ }
+
+@media screen and (max-width: 600px) {
+    .green {
+        color: greenyellow;
+    }   
+}
+
+@media screen and (max-width: 700px) {
+    .container-image{
+        img src="redrocks.jpg"
+    }
+
+}
+
+
