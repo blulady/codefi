@@ -8,7 +8,6 @@ function setupCounter() {
         console.log(countVar);
         return countVar;
     };
-    return countVar;
 };
 
 // Create a counter instance and invoke it to test
