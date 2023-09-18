@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn_onclick">Button 1</button>
+    <button class="btn_onclick">Button 2</button>
+    <button class="btn_onclick">Button 3</button>
+    <script>
+        function getRandomColor(){
+            const letters = "012345678ABCDEF";
+            let color = "#";
+            for (let i = 0; i<6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        const allButtons = document.querySelectorAll('.btn_onclick');
+        allButtons.forEach(button => {
+            button.onclick = function () {
+                document.body.style.backgroundColor = getRandomColor();
+            }
+        })
+    </script>
+</body>
+</html>
